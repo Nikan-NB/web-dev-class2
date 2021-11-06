@@ -51,6 +51,8 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    width: 70%;
+    height: 70%;
 }
 
 .close-btn {
@@ -60,4 +62,8 @@ h1 {
     right: 20px;
     cursor: pointer;
     color: white;
+}
+
+#modal {
+    display: none;
 }
