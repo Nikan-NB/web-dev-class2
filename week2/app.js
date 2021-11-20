@@ -2,7 +2,7 @@ const pas = document.getElementById("pas");
 
 setInterval(password ,1000);
 
-a = 1234;
+a = 1111;
 
 function password(){
 
