@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامه ی محاسبه انعام</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <h2 id="h21">برنامه ی محاسبه انعام</h2>
+
+        <label for="bill">هزینه ی فاکتور به ریال</label>
+        <input type="number" id="bill">
+        
+        <br>
+        
+        <label for="service">میزان رضایت شما</label>
+        <select id="service">
+            <option value="">عالی</option>
+            <option value="">خوب</option>
+            <option value="">قابل قبول</option>
+            <option value="">بد</option>
+            <option value="">خیلی بد</option>
+        </select>
+        <br>
+        <label for="people">میزان افراد</label>
+        <input type="number" id="people">
+        <br>
+        <button id="cal">محاسبه انعام</button>
+        <br>
+        <h2 id="amount">0</h2>
+    </div>
+</body>
+</html>

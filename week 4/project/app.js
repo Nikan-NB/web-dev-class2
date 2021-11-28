@@ -8,6 +8,7 @@ const stop =document.getElementById('stop');
 let minut = 25;
 let second = 1
 
+
 function timer(){
     second--;
     if(second == 00){
@@ -30,13 +31,16 @@ btnd.addEventListener('click', function(){
     }
 })
 
-stop.addEventListener('click' , function() {
-    clearInterval(timer);
-})
+
 
 start.addEventListener('click', function(){
     asli.innerHTML= minut + ':' + '00';
-    setInterval(timer, 1000);
+    const myinterval = setInterval(timer, 1000)
+    
+    
+    stop.addEventListener('click' , function() {
+        clearInterval(myinterval);
+    })
 })
 
 
