@@ -72,11 +72,10 @@ span {
 }
 
 #valid-text {
-  color: white;
+  color: black;
   background-color: red;
   font-size: 2em;
   display: inline-block;
   padding: 10px;
   border-radius: 5px;
-  visibility: hidden;
 }

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(129, 25, 34);
+}
+
+.di {
+    background-color: rgb(190, 190, 37);
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 5px;
+}
+
+.obj {
+    margin: 2px;
+}
