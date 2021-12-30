@@ -5,19 +5,29 @@
 }
 
 body {
-    background-color: rgb(129, 25, 34);
+    background-color: #8E806A;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
 }
 
 .di {
-    background-color: rgb(190, 190, 37);
-    width: 30%;
-    height: 50%;
+    background-color: #C3B091;
+    left: 50%;
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
     border-radius: 5px;
 }
 
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+} 
+
 .obj {
-    margin: 2px;
+    text-align: center;
 }
