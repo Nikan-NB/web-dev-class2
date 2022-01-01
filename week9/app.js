@@ -8,6 +8,8 @@ const age = document.getElementById("age");
 const cel = document.getElementById("cel");
 const ref = document.getElementById("ref");
 
+console.log( cel)
+
 fetch(url)
   .then(function (response) {
     return response.json();
@@ -17,8 +19,10 @@ fetch(url)
     naam.innerHTML = data.results[0].name.title + ' ' + data.results[0].name.first + ' ' + data.results[0].name.last;
     locate.innerHTML = data.results[0].location.city + ',' + data.results[0].location.country;
     adres.innerHTML = data.results[0].location.street.name;
+    em.href = 'mailto:' + data.results[0].email;
     em.innerHTML = data.results[0].email;
     age.innerHTML = data.results[0].dob.age;
+    cel.href = 'tel:' + data.results[0].cell;
     cel.innerHTML = data.results[0].cell;
     console.log(data.results);
   });
@@ -34,8 +38,10 @@ ref.addEventListener('click', function(){
     naam.innerHTML = data.results[0].name.title + ' ' + data.results[0].name.first + ' ' + data.results[0].name.last;
     locate.innerHTML = data.results[0].location.city + ',' + data.results[0].location.country;
     adres.innerHTML = data.results[0].location.street.name;
+    em.href = 'mailto:' + data.results[0].email;
     em.innerHTML = data.results[0].email;
     age.innerHTML = data.results[0].dob.age;
+    cel.href = 'tel:' + data.results[0].cell;
     cel.innerHTML = data.results[0].cell;
     console.log(data.results);
   });

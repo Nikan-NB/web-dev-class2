@@ -33,7 +33,7 @@ body {
 }
 
 #ref {
-    background-color: #8E806A;
+    background-color: #E4CDA7;
     width: 50%;
     text-align: center;
     margin-left: auto;
@@ -43,4 +43,13 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: large;
+    cursor: pointer;
+}
+
+#ref:hover {
+    background-color: #FFE6BC;
+}
+
+span {
+    margin: 10px;
 }
