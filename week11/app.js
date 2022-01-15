@@ -1,6 +1,7 @@
 const container = document.getElementById("cont");
 const btn = document.getElementById("new");
 const url = "https://randomuser.me/api";
+const err = document.getElementById('error')
 
 btn.addEventListener("click", function () {
   fetch(url)
@@ -9,9 +10,9 @@ btn.addEventListener("click", function () {
     })
     .then(function (data) {
       console.log(data);
+      err.innerHTML = ' '
       const item = document.createElement("div");
       item.id = "di";
-    //   document.getElementById("di").style.display = '';
       const bt = document.createElement("button");
       bt.innerHTML = "Delete";  
       const aks = document.createElement("img");
@@ -75,7 +76,10 @@ btn.addEventListener("click", function () {
       
 
       bt.addEventListener("click", function () {
-        document.getElementById("di").style.display = "none";
+        item.remove();
       });
-    });
+    })
+    .catch(function(error) {
+      err.innerHTML = 'somthing wrong!'
+    })
 });

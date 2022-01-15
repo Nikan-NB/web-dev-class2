@@ -14,7 +14,7 @@ body {
     background-color: #C3B091;
     margin: 10px;
     width: 30%;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: black 10px;
 }
 
@@ -55,8 +55,15 @@ span {
 
 .cont {
     display: flex;
+    flex-wrap: wrap;
 }
 
 img {
     border-radius: 5px;
+}
+
+#error{
+    color: red;
+    text-align: center;
+    font-size: 50px;
 }
