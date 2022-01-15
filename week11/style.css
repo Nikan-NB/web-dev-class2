@@ -10,12 +10,9 @@ body {
     font-size: 20px;
 }
 
-.di {
+#di {
     background-color: #C3B091;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: 10px;
     width: 30%;
     border-radius: 5px;
     box-shadow: black 10px;
@@ -33,7 +30,7 @@ body {
     text-align: center;
 }
 
-#ref {
+button {
     background-color: #E4CDA7;
     width: 50%;
     text-align: center;
@@ -45,6 +42,7 @@ body {
     margin-bottom: 5px;
     font-size: large;
     cursor: pointer;
+    height: 30px;
 }
 
 #ref:hover {
@@ -53,4 +51,12 @@ body {
 
 span {
     margin: 10px;
+}
+
+.cont {
+    display: flex;
+}
+
+img {
+    border-radius: 5px;
 }

@@ -10,7 +10,7 @@ const ref = document.getElementById("ref");
 
 console.log( cel)
 
-fetch(url)
+  fetch(url)
   .then(function (response) {
     return response.json();
   })
